@@ -1,0 +1,8 @@
+# SPDX-License-Identifier: GPL-2.0
+config OPLUS_MEMFREE_RECLAIM
+	tristate "Memfree check and shrink"
+	depends on HYBRIDSWAP && OPLUS_FEATURE_CPU_JANKINFO
+
+config OPLUS_MEMFREE_JANK
+	bool "Check cpu load support"
+	depends on HYBRIDSWAP && OPLUS_FEATURE_CPU_JANKINFO
